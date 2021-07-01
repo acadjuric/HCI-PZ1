@@ -1,0 +1,42 @@
+﻿<Window x:Class="Projekat1.Dodavanje_Novog_Stadiona"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekat1"
+        mc:Ignorable="d"
+        Title="Dodavanje_Novog_Stadiona" Height="650" Width="900">
+    <Window.Background>
+        <ImageBrush ImageSource="naslovna1.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Button x:Name="DugmeOdustani" Content="ODUSTANI" HorizontalAlignment="Left" Height="51" Margin="613,538,0,0" VerticalAlignment="Top" Width="230" FontSize="36" Click="DugmeOdustani_Click" FontFamily="Rockwell Extra Bold" Opacity="0.5"/>
+        <Button x:Name="DugmeZavrsi" Content="ZAVRŠI" HorizontalAlignment="Left" Height="51" Margin="88,538,0,0" VerticalAlignment="Top" Width="230" FontSize="36" Click="DugmeZavrsi_Click" Opacity="0.5" FontFamily="Rockwell Extra Bold"/>
+        <Label x:Name="LabelaNaziv" Content="Naziv:" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" FontFamily="Kartika"/>
+        <TextBox x:Name="TextBoxNaziv" HorizontalAlignment="Left" Height="40" Margin="134,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="709" FontSize="24" Background="{x:Null}" Foreground="White" CaretBrush="White" SelectionBrush="#FF2EFF00">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Label x:Name="LabelaLokacija" Content="Lokacija:" HorizontalAlignment="Left" Height="39" Margin="10,104,0,0" VerticalAlignment="Top" Width="129" FontSize="22" Background="Transparent" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Kartika" Foreground="#FFFBFBFB"/>
+        <TextBox x:Name="TextBoxLokacija" HorizontalAlignment="Left" Height="39" Margin="180,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="663" FontSize="24" Background="{x:Null}" CaretBrush="#FFF7F3F3" Foreground="#FFFDFDFD" SelectionBrush="#FF15FB0A"/>
+        <Label x:Name="LabelaKapacitet" Content="Kapacitet stadiona:" HorizontalAlignment="Left" Height="40" Margin="10,200,0,0" VerticalAlignment="Top" Width="221" FontSize="22" FontFamily="Kartika" Foreground="#FFFDF9F9" FontWeight="Bold"/>
+        <TextBox x:Name="TextBoxKapacitet" HorizontalAlignment="Left" Height="40" Margin="281,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" FontSize="20" Background="{x:Null}" CaretBrush="White" Foreground="White" SelectionBrush="#FF17FF00"/>
+        <Label x:Name="LabelaDatum" Content="Datum:" HorizontalAlignment="Left" Height="40" Margin="410,200,0,0" VerticalAlignment="Top" Width="101" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Kartika" Foreground="White"/>
+        <ComboBox x:Name="ComoBoxDan" HorizontalAlignment="Left" Height="40" Margin="532,200,0,0" VerticalAlignment="Top" Width="50" FontSize="14" Background="{x:Null}" BorderBrush="White" Foreground="Black" FontWeight="Bold"/>
+        <ComboBox x:Name="ComoBoxMesec" HorizontalAlignment="Left" Height="40" Margin="599,200,0,0" VerticalAlignment="Top" Width="150" FontSize="14" Background="{x:Null}" BorderBrush="White" Foreground="Black" FontWeight="Bold"/>
+        <ComboBox x:Name="ComoBoxGodina" HorizontalAlignment="Left" Height="40" Margin="763,200,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Background="{x:Null}" BorderBrush="White" Foreground="Black" FontWeight="Bold"/>
+        <Label x:Name="LabelaDan" Content="Dan" HorizontalAlignment="Left" Height="29" Margin="532,166,0,0" VerticalAlignment="Top" Width="50" FontSize="14" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="LabelaMesec" Content="Mesec" HorizontalAlignment="Left" Height="24" Margin="599,166,0,0" VerticalAlignment="Top" Width="150" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="LabelaGodina" Content="Godina" HorizontalAlignment="Left" Height="24" Margin="763,166,0,0" VerticalAlignment="Top" Width="80" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="LabelaTekstZaStadion" Content="Tekst:" HorizontalAlignment="Left" Height="46" Margin="10,245,0,0" VerticalAlignment="Top" Width="100" FontSize="24" FontFamily="Kartika" Foreground="White"/>
+        <TextBox x:Name="TextBoxOpisStadiona" HorizontalAlignment="Left" Height="267" Margin="88,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="294" FontSize="20" SelectionBrush="#FF00FF17" CaretBrush="Black" Opacity="0.6" FontWeight="Bold"/>
+        <Button x:Name="DugmeZaSliku" Content="Učitaj sliku" HorizontalAlignment="Left" Height="51" Margin="425,258,0,0" VerticalAlignment="Top" Width="170" FontSize="24" Click="DugmeZaSliku_Click" Opacity="0.7" FontWeight="Bold"/>
+        <Image x:Name="PoljeZaSliku" HorizontalAlignment="Left" Height="186" Margin="425,326,0,0" VerticalAlignment="Top" Width="418"/>
+
+    </Grid>
+</Window>
